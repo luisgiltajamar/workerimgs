@@ -12,8 +12,12 @@ function error(err) {
 
 function parar() {
     if (trabajador != undefined) {
-        trabajador.terminate();
+       // trabajador.terminate();
+        
+        trabajador.postMessage("PARAR");
+
         trabajador = undefined;
+
     }
 
 

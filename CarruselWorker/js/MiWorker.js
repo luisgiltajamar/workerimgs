@@ -10,4 +10,15 @@ function cambio() {
 
 }
 
+function dimeAlgo(evt) {
+    if (evt.data=="PARAR") {
+
+        self.close();
+
+    }
+
+
+}
+
+addEventListener("message", dimeAlgo);
 cambio();
